@@ -7,7 +7,7 @@ A Chrome extension that generates an adblock syntax filter by combining multiple
 - Easily input URLs of host files or blocklists to be combined.
 - Generates an adblock syntax filter by parsing host files and blocklists.
 - Removes duplicate entries and sorts the resulting list alphabetically.
-- Exports the combined filter list as a downloadable text file named "my-blocklist.txt."
+- Exports the combined filter list as a downloadable text file named "blocklist.txt."
 
 ## Installation
 
@@ -23,4 +23,4 @@ A Chrome extension that generates an adblock syntax filter by combining multiple
 2. In the input field, add the URLs of the host files or blocklists you want to combine (one per line).
 3. Click the "Generate Filter" button.
 4. The extension will process the files, remove duplicates, and sort the entries alphabetically.
-5. The generated filter list will be downloaded as a text file named "my-blocklist.txt."
+5. The generated filter list will be downloaded as a text file named "blocklist.txt."
