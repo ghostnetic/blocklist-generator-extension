@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 16px;
+  background-color: #222529;
+  color: #e6e6e6;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 280px;
+  min-height: 150px;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 12px 0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="file"] {
+  margin-bottom: 8px;
+}
