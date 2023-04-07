@@ -57,7 +57,7 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
 
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'my-blocklist.txt';
+      a.download = 'blocklist.txt';
       a.style.display = 'none';
       document.body.appendChild(a);
       a.click();
