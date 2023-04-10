@@ -13,10 +13,8 @@ document.getElementById('generate-filter').addEventListener('click', () => {
       chrome.runtime.sendMessage(
         { action: 'generateFilter', fileContents },
         response => {
-          if (response.error) {
+          if (response && response.error) {
             alert(response.error);
-          } else {
-            downloadFile('my-blocklist.txt', response.filterContent);
           }
         }
       );
@@ -35,12 +33,10 @@ function readFileAsText(file) {
   });
 }
 
-function downloadFile(filename, content) {
-  const blob = new Blob([content], { type: 'text/plain' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = filename;
-  a.click();
-  URL.revokeObjectURL(url);
-}
+document.getElementById('file-input').addEventListener('change', (event) => {
+  const fileInput = event.target;
+  const fileNames = Array.from(fileInput.files)
+    .map(file => file.name)
+    .join(', ');
+  document.getElementById('file-selected-label').textContent = fileNames || 'No file chosen';
+});
