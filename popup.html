@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="popup.css">
-</head>
-<body>
-  <h1>AdBlock Filter Generator</h1>
-  <p>Upload the host files and blocklists you want to combine:</p>
-  <input type="file" id="file-input" multiple>
-  <button id="generate-filter" class="center">Generate Filter</button>
-  <script src="popup.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <h1>AdBlock Filter Generator</h1>
+    <p id="instruction">Select one or more host files to generate a filter:</p>
+    <input type="file" id="file-input" multiple>
+    <div id="progress-container" hidden>
+      <div id="progress-bar"></div>
+    </div>
+    <button id="generate-filter">Generate Filter</button>
+    <script src="popup.js"></script>
+  </body>
 </html>
