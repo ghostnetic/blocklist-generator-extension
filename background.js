@@ -64,9 +64,16 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
       document.body.removeChild(a);
 
       URL.revokeObjectURL(url);
+
+      sendResponse({ success: true });
     } catch (err) {
       console.error('Error generating filter:', err);
-      alert('Error generating filter. Check the files and try again.');
+      sendResponse({ error: 'Error generating filter. Check the files and try again.' });
     }
   }
+
+  // Required for async response handling.
+  return true;
 });
+
+
