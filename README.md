@@ -1,27 +1,29 @@
-# AdBlock Filter Generator Extension
+# AdBlock Filter Generator
 
-A Chrome extension that generates an adblock syntax filter by combining multiple host files and blocklists. This extension allows users to create a custom filter list to enhance their ad-blocking experience by consolidating various lists they find effective.
+This Chrome extension generates an adblock filter in the form of a text file from multiple host files and blocklists. It combines all the selected lists, eliminates duplicate lines, and creates a filter compatible with adblocker syntax.
 
 ## Features
 
-- Easily select multiple host files to be combined.
-- Generates an adblock syntax filter by parsing host files and blocklists.
-- Removes duplicate entries and sorts the resulting list alphabetically.
-- Exports the combined filter list as a downloadable text file named "blocklist.txt."
-- Progress bar to show the filter generation process.
+- Combine multiple host files and blocklists
+- Remove duplicate lines
+- Display the number of duplicate lines removed
+- Download the generated filter as a `.txt` file
 
 ## Installation
 
-1. Download or clone this repository to your local machine.
-2. Open Google Chrome and navigate to `chrome://extensions`.
-3. Enable "Developer mode" by toggling the switch in the top right corner of the page.
-4. Click "Load unpacked" and select the "adblock-filter-generator" folder you downloaded or cloned.
-5. The extension should now be installed and visible in your browser toolbar.
+1. Clone this repository or download the source code.
+2. Install the extension by following these steps:
+   - Open Chrome and navigate to `chrome://extensions/`.
+   - Enable "Developer mode" by toggling the switch in the top-right corner.
+   - Click "Load unpacked" and select the directory containing the source code.
 
 ## Usage
 
-1. Click on the extension icon in the browser toolbar to open the popup window.
-2. Click on the "Choose Files" button and select one or more host files or blocklists you want to combine.
+1. Click on the extension icon.
+2. Select from the available blocklists or upload your own host files.
 3. Click the "Generate Filter" button.
-4. The extension will process the files, remove duplicates, and sort the entries alphabetically, while displaying a progress bar.
-5. The generated filter list will be downloaded as a text file named "blocklist.txt."
+4. The extension will generate the filter and automatically download it as a `.txt` file.
+
+## License
+
+This project is released under the MIT License.
