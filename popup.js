@@ -70,3 +70,4 @@ document.getElementById('file-input').addEventListener('change', (event) => {
     .join(', ');
   document.getElementById('file-selected-label').textContent = fileNames || 'No file chosen';
 });
+
