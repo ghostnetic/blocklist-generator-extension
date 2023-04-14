@@ -6,7 +6,10 @@
   </head>
   <body>
     <h1>AdBlock Filter Generator</h1>
-    <p id="instruction">Select one or more host files to generate a filter:</p>
+    <p id="instruction">Select a blocklist below or upload your own to generate a filter:</p>
+    <ul id="blocklist-container">
+      <!-- Blocklists will be added here by the script -->
+    </ul>
     <input type="file" id="file-input" multiple>
     <div id="progress-container" hidden>
       <div id="progress-bar"></div>
