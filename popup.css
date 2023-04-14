@@ -2,61 +2,63 @@ body {
   font-family: Roboto, sans-serif;
   margin: 5px;
   padding: 15px;
-  background-color: #0E1419;
-  color: #DBE3EC;
+  background-color: #171A21;
+  color: #D4D6FC;
   width: 350px;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 h1 {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: black;
   text-align: center;
-  color: #7B97B7;
-  margin-bottom: 10px;
+  color: #7A93AC;
+  margin-bottom: 15px;
 }
 
 .file-input-label,
 #file-selected-label {
-  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
   display: block;
-  margin-bottom: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #9AB1E3;
 }
 
 input[type='file'] {
+  font-family: Roboto, sans-serif;  
   font-size: 14px;
-  margin-bottom: 10px;
-  border: 1px solid #33465C;
+  margin-bottom: 15px;
+  border: 1px solid #617073;
   border-radius: 4px;
-  background-color: #161E27;
-  color: #96ACC5;
+  background-color: #1E232B;
+  color: #AFB3F7;
 }
 
 button {
   display: block;
   width: 100%;
-  padding: 8px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 18px;
   font-weight: bold;
-  color: #070A0D;
-  background-color: #6182A8;
+  color: #171A21;
+  background-color: #9AB1E3;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 button:hover {
-  background-color: #506E91;
+  background-color: #7A93AC;
 }
 
 button:active {
-  background-color: #415A76;
+  background-color: #617073;
 }
 
-/* Modify the existing #progress-container and #progress-bar rules */
 #progress-container {
   position: relative;
   width: 100%;
@@ -64,7 +66,7 @@ button:active {
   background-color: #1F2733;
   border-radius: 4px;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 #progress-bar {
@@ -73,37 +75,53 @@ button:active {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #4CAF50; /* Complimentary green color */
+  background-color: #4C7FB0;
   transition: width 0.2s ease-out;
 }
 
-/* Add the following new CSS rule */
 .file-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+input[type='file'] {
+  font-size: 14px;
+  margin-right: 10px;
+  border: 1px solid #617073;
+  border-radius: 4px;
+  background-color: #171A21;
+  color: #D4D6FC;
+}
+
+#instruction {
+  margin-bottom: 12px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  font-weight: 500;
+  color: #D4D6FC;
+}
+
+label {
+  font-size: 14px;
+  display: block;
+  font-weight: 400;
+  color: #E5E6F7;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.blocklist-item {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-/* Modify the following existing CSS rule */
-input[type='file'] {
-  font-size: 13px;
-  margin-right: 10px;
-  border: 1px solid #33465C;
-  border-radius: 4px;
-  background-color: #161E27;
-  color: #96ACC5;
-}
-
-/* Add a new rule for the instruction paragraph */
-#instruction {
-  margin-bottom: 8px;
-  font-size: 14px;
-  padding-bottom: 5px;
-}
-
-/* Update the existing label rule */
-label {
-  font-size: 13px;
-  display: block;
-  margin-bottom: 5px;
+.external-link {
+  margin-left: 8px;
+  text-decoration: none;
+  color: #9AB1E3;
 }
