@@ -1,4 +1,4 @@
-# AdBlock Filter Generator
+# AdBlock Filter Generator Extension
 
 A Chrome extension that generates an adblock syntax filter by combining multiple host files and blocklists. This extension allows users to create a custom filter list to enhance their ad-blocking experience by consolidating various lists they find effective.
 
