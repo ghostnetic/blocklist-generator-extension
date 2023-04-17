@@ -19,10 +19,10 @@ The extension comes with a predefined set of filter lists that you can choose fr
 - NoTracking: https://raw.githubusercontent.com/notracking/hosts-blocklists/master/adblock/adblock.txt
 - 1Hosts (Pro): https://o0.pages.dev/Pro/adblock.txt
 - 1Hosts (Lite): https://o0.pages.dev/Lite/adblock.txt
+- hBlock https://hblock.molinero.dev/hosts_adblock.txt
 - NoTrack Tracker Blocklist: https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/trackers.hosts
 
 You can select any combination of these filter lists or add your own host files to generate a custom filter.
-
 
 ## Installation
 
