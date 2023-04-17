@@ -9,6 +9,17 @@ This Chrome extension generates an adblock filter in the form of a text file fro
 - Display the number of duplicate lines removed
 - Download the generated filter as a `.txt` file
 
+## Included Filter Lists
+
+- OISD Big: https://big.oisd.nl/
+- OISD Small: https://small.oisd.nl/
+- HaGeZi's Pro DNS Blocklist: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt
+- HaGeZi's Normal DNS Blocklist: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt
+- NoTracking: https://raw.githubusercontent.com/notracking/hosts-blocklists/master/adblock/adblock.txt
+- 1Hosts (Pro): https://o0.pages.dev/Pro/adblock.txt
+- 1Hosts (Lite): https://o0.pages.dev/Lite/adblock.txt
+- NoTrack Tracker Blocklist: https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/trackers.hosts
+
 ## Installation
 
 1. Clone this repository or download the source code.
