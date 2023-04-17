@@ -22,7 +22,7 @@ The extension comes with a predefined set of filter lists that you can choose fr
 - hBlock https://hblock.molinero.dev/hosts_adblock.txt
 - NoTrack Tracker Blocklist: https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/trackers.hosts
 
-You can select any combination of these filter lists or add your own host files to generate a custom filter.
+You can select any combination of these filter lists or add your own host files or blocklists to generate a custom filter.
 
 ## Installation
 
