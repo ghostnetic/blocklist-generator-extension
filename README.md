@@ -11,6 +11,7 @@ This Chrome extension generates an adblock filter in the form of a text file fro
 
 ## Included Filter Lists
 
+The extension comes with a predefined set of filter lists that you can choose from:
 - OISD Big: https://big.oisd.nl/
 - OISD Small: https://small.oisd.nl/
 - HaGeZi's Pro DNS Blocklist: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt
@@ -19,6 +20,9 @@ This Chrome extension generates an adblock filter in the form of a text file fro
 - 1Hosts (Pro): https://o0.pages.dev/Pro/adblock.txt
 - 1Hosts (Lite): https://o0.pages.dev/Lite/adblock.txt
 - NoTrack Tracker Blocklist: https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/trackers.hosts
+
+You can select any combination of these filter lists or add your own host files to generate a custom filter.
+
 
 ## Installation
 
