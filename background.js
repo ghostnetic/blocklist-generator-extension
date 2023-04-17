@@ -50,8 +50,7 @@ function generateHeader(domainCount, duplicatesRemoved) {
 # Created: ${date}
 # Domain Count: ${domainCount}
 # Duplicates Removed: ${duplicatesRemoved}
-#=========================================================
-`;
+#===============================================================`;
 }
 
 chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
