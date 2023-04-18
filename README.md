@@ -4,9 +4,13 @@ This Chrome extension generates an adblock filter in the form of a text file fro
 
 ## Features
 
+Features
+
 - Combine multiple host files and blocklists
+- Convert rules to adblock-style syntax
 - Remove duplicate lines
-- Display the number of duplicate lines removed
+- Discard redundant rules due to existing domain rules
+- Display the number of duplicate lines removed and domains compressed
 - Download the generated filter as a `.txt` file
 
 ## Included Filter Lists
