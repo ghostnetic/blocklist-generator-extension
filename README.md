@@ -30,7 +30,7 @@ You can select any combination of these filter lists or add your own host files 
 
 ## Installation
 
-1. Clone this repository or download the source code.
+1. Clone this repository or download the zip file. You can also download the source code.
 2. Install the extension by following these steps:
    - Open Chrome and navigate to `chrome://extensions/`.
    - Enable "Developer mode" by toggling the switch in the top-right corner.
