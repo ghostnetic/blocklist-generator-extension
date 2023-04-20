@@ -1,9 +1,9 @@
 body {
   font-family: Roboto, sans-serif;
   margin: 5px;
-  padding: 15px;
+  padding: 15px;    
   background-color: #171A21;
-  color: #D4D6FC;
+  color: #d4e7fc;
   width: 350px;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -13,50 +13,51 @@ h1 {
   font-size: 20px;
   font-weight: black;
   text-align: center;
-  color: #7A93AC;
+  color: #86a9de;
   margin-bottom: 15px;
 }
 
 .file-input-label,
-#file-selected-label {
+#file-selected-label,
+input[type='file'] {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   display: block;
   margin-bottom: 10px;
   font-weight: 500;
-  color: #9AB1E3;
+  color: #afc5f7;
 }
 
 input[type='file'] {
-  font-family: Roboto, sans-serif;  
-  font-size: 14px;
   margin-bottom: 15px;
-  border: 1px solid #617073;
+  border: 1px solid #86a9de;
   border-radius: 4px;
   background-color: #1E232B;
-  color: #AFB3F7;
+  color: #afc5f7;
 }
+
 
 button {
   display: block;
   width: 100%;
   padding: 10px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
-  color: #171A21;
-  background-color: #9AB1E3;
+  color: #171e26;
+  background-color: #86a9de;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
   margin-top: 8px;
 }
 
 button:hover {
-  background-color: #7A93AC;
+  background-color: #3e6eb7;
 }
 
 button:active {
-  background-color: #617073;
+  background-color: #616c73;
 }
 
 #progress-container {
@@ -88,10 +89,10 @@ button:active {
 input[type='file'] {
   font-size: 14px;
   margin-right: 10px;
-  border: 1px solid #617073;
+  border: 1px solid #86a9de;
   border-radius: 4px;
   background-color: #171A21;
-  color: #D4D6FC;
+  color: #c8dcf6;
 }
 
 #instruction {
@@ -99,7 +100,7 @@ input[type='file'] {
   font-size: 14px;
   padding-bottom: 5px;
   font-weight: 500;
-  color: #D4D6FC;
+  color: #c8dcf6;
 }
 
 label {
