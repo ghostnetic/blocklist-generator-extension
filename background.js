@@ -1,10 +1,8 @@
-function parseHostsFile(content) {
+const parseHostsFile = content => {
   const fileLines = content.split('\n');
   const adblockRules = fileLines.filter(line => {
     const trimmedLine = line.trim();
-    return !trimmedLine.startsWith('#') &&
-           !trimmedLine.startsWith('!') &&
-           trimmedLine !== '';
+    return /^(#|!)/.test(trimmedLine) === false && trimmedLine !== '';
   }).map(line => {
     if (line.startsWith('||') && line.endsWith('^')) {
       return line;
@@ -15,9 +13,9 @@ function parseHostsFile(content) {
     }
   });
   return adblockRules;
-}
+};
 
-function removeRedundantRules(rules) {
+const removeRedundantRules = rules => {
   const filteredRules = [];
   const domainSet = new Set();
 
@@ -31,9 +29,9 @@ function removeRedundantRules(rules) {
   });
 
   return filteredRules;
-}
+};
 
-function generateFilter(fileContents, fileName = 'blocklist.txt') {
+const generateFilter = (fileContents, fileName = 'blocklist.txt') => {
   let duplicatesRemoved = 0;
   const uniqueRules = new Set();
 
@@ -48,7 +46,7 @@ function generateFilter(fileContents, fileName = 'blocklist.txt') {
     });
   });
 
-  const compressedRules = removeRedundantRules(Array.from(uniqueRules));
+  const compressedRules = removeRedundantRules(uniqueRules);
   const domainsCompressed = uniqueRules.size - compressedRules.length;
   duplicatesRemoved += domainsCompressed;
   const sortedRules = compressedRules.sort();
@@ -69,9 +67,9 @@ function generateFilter(fileContents, fileName = 'blocklist.txt') {
   URL.revokeObjectURL(url);
 
   return { filterContent, duplicatesRemoved, domainsCompressed };
-}
+};
 
-function generateHeader(domainCount, duplicatesRemoved, domainsCompressed) {
+const generateHeader = (domainCount, duplicatesRemoved, domainsCompressed) => {
   const date = new Date().toISOString().slice(0, 10);
   return `# Title: AdBlock Filter Generator
 # Description: Chrome Extension to generate adblock syntax filter from multiple host files and blocklists
@@ -80,7 +78,7 @@ function generateHeader(domainCount, duplicatesRemoved, domainsCompressed) {
 # Duplicates Removed: ${duplicatesRemoved}
 # Domains Compressed: ${domainsCompressed}
 #===============================================================`;
-}
+};
 
 chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
   if (request.action === 'generateFilter') {
