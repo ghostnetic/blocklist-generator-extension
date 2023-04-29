@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
     <meta charset="UTF-8">
     <title>AdBlock Filter Generator</title>
@@ -8,16 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
   </head>
   <body>
-    <h1>AdBlock Filter Generator</h1>
-    <p id="instruction">Select a blocklist below or upload your own to generate a filter:</p>
-    <ul id="blocklist-container">
-      <!-- Blocklists will be added here by the script -->
-    </ul>
-    <input type="file" id="file-input" multiple>
-    <div id="progress-container" hidden>
-      <div id="progress-bar"></div>
+    <div class="container">
+      <h1>AdBlock Filter Generator</h1>
+      <p id="instruction">Select a blocklist below or upload your own to generate a filter:</p>
+      <ul id="blocklist-container">
+        <!-- Blocklists will be added here by the script -->
+      </ul>
+      <div class="file-section">
+        <input type="file" id="file-input" multiple>
+        <label for="file-input" class="file-input-label" id="file-selected-label">
+      </div>
+      <button id="generate-filter">Generate Filter</button>
     </div>
-    <button id="generate-filter">Generate Filter</button>
     <script src="popup.js"></script>
   </body>
 </html>
+
