@@ -15,11 +15,29 @@ const blocklistContainer = document.getElementById('blocklist-container');
 BLOCKLISTS.forEach((blocklist, index) => {
   const listItem = document.createElement('li');
   listItem.classList.add('blocklist-item');
-  listItem.innerHTML = `
-    <input type="checkbox" id="blocklist-${index}">
-    <label for="blocklist-${index}">${blocklist.name}</label>
-    <a href="${blocklist.url}" target="_blank" rel="noopener noreferrer" class="external-link">&#x2197;</a>
-  `;
+
+  const input = document.createElement('input');
+  input.type = 'checkbox';
+  input.id = `blocklist-${index}`;
+
+  const label = document.createElement('label');
+  label.htmlFor = `blocklist-${index}`;
+  label.textContent = blocklist.name;
+
+  const link = document.createElement('a');
+  link.href = blocklist.url;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.className = 'external-link';
+
+  const icon = document.createElement('i');
+  icon.className = 'fas fa-up-right-from-square';
+  link.appendChild(icon);
+
+  listItem.appendChild(input);
+  listItem.appendChild(label);
+  listItem.appendChild(link);
+
   blocklistContainer.appendChild(listItem);
 });
 
