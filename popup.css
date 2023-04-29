@@ -1,10 +1,8 @@
 body {
-
   font-family: Roboto, sans-serif;
-
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #171A21 0%, #1E232B 100%);
+  background: radial-gradient(circle, #1a1f28 0%, #2e3a4d 100%);
   color: #d4e7fc;
   display: flex;
   align-items: center;
@@ -15,7 +13,7 @@ body {
 .container {
   padding: 20px;
   width: 350px;
-  border-radius: 18px;
+  border-radius: 32px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   background-color: #1E232B;
 }
@@ -25,7 +23,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   color: #86a9de;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .file-input-label,
@@ -40,21 +38,22 @@ input[type='file'] {
 }
 
 input[type='file'] {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border: 1px solid #86a9de;
   border-radius: 8px;
   background-color: #1E232B;
   color: #afc5f7;
+  cursor: pointer;
 }
 
 button {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   font-size: 17px;
   font-weight: 500;
   color: #171e26;
-  background-image: radial-gradient(circle, #86a9de 0%, #3e6eb7 100%);
+  background-image: radial-gradient(circle, #4a8fd4 0%, #2164a3 100%);
   border: none;
   border-radius: 16px;
   background-repeat: no-repeat;
@@ -66,7 +65,7 @@ button {
 }
 
 button:hover {
-  background-image: radial-gradient(circle, #3e6eb7 0%, #86a9de 100%);
+  background-image: radial-gradient(circle, #2164a3 0%, #4a8fd4 100%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -78,16 +77,11 @@ button:active {
 .file-section {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-input[type='file'] {
-  font-size: 14px;
-  margin-right: 10px;
-  border: 1px solid #86a9de;
-  border-radius: 8px;
-  background-color: #171A21;
-  color: #c8dcf6;
+input[type='file']:hover {
+  background-image: radial-gradient(circle, #1E232B 0%, #171A21 100%);
 }
 
 #instruction {
@@ -120,6 +114,11 @@ ul {
   margin-left: 8px;
   text-decoration: none;
   color: #9AB1E3;
+  transition: color 0.2s ease;
+}
+
+.external-link:hover {
+  color: #7cb1f5;
 }
 
 input[type='file'] {
@@ -133,7 +132,7 @@ input[type='file']:hover {
 body {
   /* ... */
   /* Updated background gradient with more vibrant colors and angle */
-  background: linear-gradient(150deg, #1a1f28 0%, #2e3a4d 100%);
+  background: radial-gradient(circle, #1a1f28 0%, #2e3a4d 100%);
   /* ... */
 }
 
