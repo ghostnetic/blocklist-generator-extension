@@ -12,11 +12,20 @@ body {
 
 .container {
   padding: 20px;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   background-color: #1E232B;
 }
+
+/* Media query for larger devices */
+@media (min-width: 768px) {
+  .container {
+    width: 350px;
+  }
+}
+
 
 h1 {
   font-size: 20px;
@@ -51,11 +60,11 @@ button {
   width: 100%;
   padding: 12px;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 500;
   color: #171e26;
   background-image: radial-gradient(circle, #4a8fd4 0%, #2164a3 100%);
   border: none;
-  border-radius: 16px;
+  border-radius: 10px;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 8px;
@@ -152,4 +161,3 @@ button:hover {
 .external-link:hover {
   color: #7cb1f5;
 }
-
