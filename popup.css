@@ -58,8 +58,8 @@ button {
   display: block;
   width: 100%;
   padding: 12px;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   color: #171e26;
   background-image: radial-gradient(circle, #4a8fd4 0%, #2164a3 100%);
   border: none;
