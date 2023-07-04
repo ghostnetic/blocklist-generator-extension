@@ -1,4 +1,4 @@
-# AdBlock Blocklist Generator
+Blocklist Generator
 
 This Chrome extension generates an filter in the form of a text file from multiple host files and blocklists. It combines all the selected lists, eliminates duplicate lines, and creates a filter compatible with adblocker syntax.
 
